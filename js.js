@@ -11,6 +11,7 @@ images.style.display = "grid"
 images.style.gridTemplateColumns = "repeat(3, 1fr)"
 images.style.gap = "20px"
 load.style.display = "none"
+clear.style.display = "none"
 loadMore.style.display = "none"
 clearAll.style.display = "none"
 
@@ -40,7 +41,7 @@ function getimages() {
     }).catch(error => {
         alert("что-то пошло не так")
     }).finally(() => {
-        console.log("попытка загрузки завершена"); load.style.display = "none"; loadmore.style.display = "block"; clearAll.style.display = "block"
+        console.log("попытка загрузки завершена"); load.style.display = "none"; loadmore.style.display = "block"; clearAll.style.display = "block"; clear.style.display = "block"
     })
 }
 loadButton.addEventListener("click", getimages)
