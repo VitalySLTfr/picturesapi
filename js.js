@@ -56,4 +56,5 @@ clearAll.addEventListener("click", () => {
     images.innerHTML = ""
     loadMore.style.display = "none"
     clearAll.style.display = "none"
+    clear.style.display = "none"
 })
